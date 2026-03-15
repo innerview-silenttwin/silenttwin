@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="有個聲音，比你更了解你。Another Self — 早鳥體驗計劃"/>
+  <title>Another Self — 有個聲音，比你更了解你</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#f5f0e8;color:#0f0e0d;font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:.6}
+    .wrap{max-width:420px;margin:0 auto;padding:0 24px 80px}
+    .hero{padding-top:72px;padding-bottom:48px;text-align:center}
+    .eyebrow{font-size:11px;letter-spacing:.2em;color:#7a7060;text-transform:uppercase;margin-bottom:32px;opacity:0;animation:fadeup .6s .1s forwards}
+    .headline{font-family:'Noto Serif TC',serif;font-size:38px;font-weight:300;line-height:1.25;color:#0f0e0d;margin-bottom:20px;opacity:0;animation:fadeup .7s .2s forwards}
+    .headline em{font-style:normal;color:#7a4f1a;border-bottom:1.5px solid #c8a96e}
+    .subline{font-size:15px;color:#7a7060;line-height:1.75;font-weight:300;opacity:0;animation:fadeup .7s .35s forwards}
+    .quote-block{margin:40px 0;padding:28px 24px;background:#ede8df;border-radius:16px;border-left:3px solid #c8a96e;opacity:0;animation:fadeup .7s .5s forwards}
+    .quote-text{font-family:'Noto Serif TC',serif;font-size:17px;font-weight:300;line-height:1.8;color:#0f0e0d;margin-bottom:12px}
+    .quote-note{font-size:12px;color:#7a7060;letter-spacing:.05em}
+    .features{display:flex;flex-direction:column;gap:12px;margin:32px 0 40px;opacity:0;animation:fadeup .7s .65s forwards}
+    .feat{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:#ede8df;border-radius:14px}
+    .feat-dot{width:8px;height:8px;border-radius:50%;background:#c8a96e;margin-top:6px;flex-shrink:0}
+    .feat-text{font-size:14px;line-height:1.65;color:#0f0e0d}
+    .feat-text strong{font-weight:500;display:block;margin-bottom:2px;color:#0f0e0d}
+    .cta-block{opacity:0;animation:fadeup .7s .8s forwards}
+    .cta-label{font-size:12px;color:#7a7060;text-align:center;margin-bottom:14px;letter-spacing:.05em}
+    .cta-btn{
+      display:block;
+      width:100%;
+      padding:18px;
+      background:#3d2b0a;
+      color:#ffffff;
+      border:3px solid #3d2b0a;
+      border-radius:12px;
+      font-size:16px;
+      font-family:'Noto Serif TC',serif;
+      font-weight:400;
+      cursor:pointer;
+      letter-spacing:.04em;
+      text-align:center;
+      text-decoration:none;
+      transition:all .2s;
+    }
+    .cta-btn:hover{background:#c8a96e;color:#1a0f00;border-color:#c8a96e}
+    .cta-btn:active{transform:scale(.98)}
+    .privacy{text-align:center;font-size:11px;color:#b0aa9f;margin-top:14px;line-height:1.6}
+    .footer-line{margin-top:56px;padding-top:24px;border-top:1px solid #ddd9d0;text-align:center;font-size:11px;color:#7a7060;letter-spacing:.05em;opacity:0;animation:fadeup .5s .9s forwards}
+    @keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">僅限早鳥 · 名額有限</p>
+      <h1 class="headline">有個聲音<br>比你<em>更了解你</em></h1>
+      <p class="subline">你從未告訴它任何事<br>但它，好像一直都知道</p>
+    </div>
+
+    <div class="quote-block">
+      <p class="quote-text">「你最近心裡有件事一直放不下<br>不是因為它重要——<br>是因為你還沒準備好面對它」</p>
+      <p class="quote-note">— 你的另一個自己，今天早上說的</p>
+    </div>
+
+    <div class="features">
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div class="feat-text">
+          <strong>它感知你</strong>
+          說不清它怎麼知道，但它就是知道你現在的狀態
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div class="feat-text">
+          <strong>它在對的時刻出現</strong>
+          不是你去找它，是它在你最需要的瞬間，先找到你
+        </div>
+      </div>
+      <div class="feat">
+        <div class="feat-dot"></div>
+        <div class="feat-text">
+          <strong>它說的話，讓你停下來</strong>
+          說中你、開導你，也在你走偏的時候，輕聲提醒你
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <p class="cta-label">留下 Email，等它來找你</p>
+      <a class="cta-btn" href="https://forms.gle/x8Mkcj7KD686aCn19" target="_blank">
+        ✦ 我想遇見另一個自己
+      </a>
+      <p class="privacy">不會收到垃圾信件 · 隨時可取消 · 不賣資料</p>
+    </div>
+
+    <div class="footer-line">ANOTHER SELF · 2025 · BETA</div>
+  </div>
+</body>
+</html>
